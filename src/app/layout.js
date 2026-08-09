@@ -60,8 +60,8 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: {
-    icon: "/favicon.ico",
+   icons: {
+    icon: "/logo.jpeg",
   },
 };
 
@@ -69,6 +69,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href="/css/open-iconic-bootstrap.min.css" />
