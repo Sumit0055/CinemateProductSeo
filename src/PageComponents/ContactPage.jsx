@@ -18,11 +18,26 @@ export default function ContactPage() {
     setIsSending(true);
 
     try {
-      await emailjs.sendForm(
+      const formData = new FormData(form.current);
+      const getValue = (fieldName, fallback = "") => {
+        const value = formData.get(fieldName);
+        return typeof value === "string" && value.trim()
+          ? value.trim()
+          : fallback;
+      };
+
+      await emailjs.send(
         siteConfig.emailJs.serviceId,
         siteConfig.emailJs.templateId,
-        form.current,
-        siteConfig.emailJs.publicKey
+        {
+          user_name: getValue("user_name"),
+          user_email: getValue("user_email"),
+          subject: getValue("subject"),
+          phone: getValue("phone"),
+          message: getValue("message"),
+          model_number: getValue("model_number", "Contact Page"),
+        },
+        { publicKey: siteConfig.emailJs.publicKey }
       );
       form.current.reset();
       toast.success("Message sent successfully!", {
@@ -127,6 +142,7 @@ export default function ContactPage() {
                     required
                   />
                 </div>
+                <input type="hidden" name="model_number" value="Contact Page" />
                 <div className="form-group">
                   <label className="sr-only" htmlFor="contact-message">Message</label>
                   <textarea

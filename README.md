@@ -99,6 +99,19 @@ Required public configuration:
 
 Only values prefixed with `NEXT_PUBLIC_` are used in the browser. Do not add private API keys to this project because the contact form is intentionally sent through EmailJS from the client.
 
+The contact template must contain these exact variables:
+
+```text
+{{user_name}}
+{{user_email}}
+{{subject}}
+{{phone}}
+{{message}}
+{{model_number}}
+```
+
+In the EmailJS dashboard, confirm that the selected service is connected, the template's **To Email** is your receiving inbox, and the production domain is included in the EmailJS allowed origins. The form sends `model_number` as `Contact Page` because this contact form has no model selector.
+
 ## Deploy to Vercel (recommended)
 
 The repository includes [vercel.json](./vercel.json), which uses `npm ci` and `npm run build`.
