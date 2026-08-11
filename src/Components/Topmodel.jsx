@@ -1,4 +1,5 @@
-import bg_5 from "@/assets/images/about/127.jpg";
+// import bg_5 from "@/assets/images/about/127.jpg";
+import som from "@/assets/images/about/som2.jpeg";
 import bg_1 from "@/assets/images/video/videoCover.png";
 
 export default function Topmodel() {
@@ -6,17 +7,20 @@ export default function Topmodel() {
     <section className="ftco-section-2">
       <div className="container-fluid">
         <div className="section-2-blocks-wrapper d-flex row no-gutters">
+          {/* Left Image */}
           <div
             className="img col-md-6 ftco-animate"
             role="img"
             aria-label="Cinemate Production photography session"
             style={{
-              backgroundImage: `url(${bg_5.src})`,
+              backgroundImage: `url(${som.src})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
+              marginTop: "50px",
             }}
           />
 
+          {/* Right Text + Video */}
           <div className="text col-md-6 ftco-animate">
             <div className="text-inner align-self-start">
               <h3 className="heading">
@@ -24,7 +28,7 @@ export default function Topmodel() {
               </h3>
               <p>
                 Passionate <strong>photographers</strong> capturing timeless
-                stories through the lens, blending <strong>creativity</strong>
+                stories through the lens, blending <strong>creativity</strong>{" "}
                 with emotion. From candid moments to cinematic frames, every
                 shot turns memories into art with a premium production
                 experience.
@@ -32,52 +36,36 @@ export default function Topmodel() {
 
               <ul className="my-4">
                 <li>
-                  <span className="ion-ios-checkmark-circle mr-2" aria-hidden="true"></span>
+                  <span className="ion-ios-checkmark-circle mr-2"></span>
                   Candid moments with a cinematic finish
                 </li>
                 <li>
-                  <span className="ion-ios-checkmark-circle mr-2" aria-hidden="true"></span>
+                  <span className="ion-ios-checkmark-circle mr-2"></span>
                   Editorial direction for people and brands
                 </li>
                 <li>
-                  <span className="ion-ios-checkmark-circle mr-2" aria-hidden="true"></span>
+                  <span className="ion-ios-checkmark-circle mr-2"></span>
                   Coverage across Delhi NCR and India
                 </li>
               </ul>
 
+              {/* Video Section */}
               <div className="row align-items-center">
                 <div className="col-md-7 ftco-animate">
-                  <div
-                    className="img-2 d-flex justify-content-center align-items-center"
-                    role="img"
-                    aria-label="Preview of the Cinemate Production video promo"
-                    style={{
-                      backgroundImage: `url(${bg_1.src})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                      minHeight: "250px",
-                    }}
+                  <video
+                    width="100%"
+                    controls
+                    poster={bg_1.src} // thumbnail image
+                    className="video-block"
                   >
-                    <a
-                      href="/videos/152.mp4"
-                      className="button"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Play Cinemate Production video promo"
-                    >
-                      <span className="ion-ios-play" aria-hidden="true"></span>
-                    </a>
-                  </div>
+                    <source src="/videos/final2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
                 <div className="col-md-4 d-md-flex align-items-center">
                   <h3 className="watchvideo-heading">
-                    <a
-                      href="/videos/152.mp4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span className="ion-ios-play" aria-hidden="true"></span>{" "}
-                      Watch our video promo
+                    <a href="/videos/final2.mp4" target="_blank" rel="noopener noreferrer">
+                      <span className="ion-ios-play"></span> Watch our video promo
                     </a>
                   </h3>
                 </div>

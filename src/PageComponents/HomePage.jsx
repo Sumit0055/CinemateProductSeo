@@ -1,5 +1,4 @@
 import Blog from "../Components/Blog";
-// import Modal from "../Components/Modal";
 import SecondModel from "../Components/SecondModel";
 import Service from "../Components/Service";
 import Slider from "../Components/Slider";
@@ -10,7 +9,6 @@ export default function HomePage() {
   return (
     <>
     <Slider />
-    {/* <Modal/> */}
     <Topmodel />
     <SecondModel />
     <Testimonial />

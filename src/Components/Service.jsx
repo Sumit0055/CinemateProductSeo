@@ -1,5 +1,5 @@
 import React from 'react'
-import bg_6 from '@/assets/images/service/88.jpg'
+import bg_6 from '@/assets/images/service/bg_6.jpg'
 import Image from 'next/image'
 
 export default function Service() {

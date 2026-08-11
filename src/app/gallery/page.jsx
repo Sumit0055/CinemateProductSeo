@@ -1,3 +1,4 @@
+import Blog from "@/Components/Blog";
 import GalleryPage from "@/PageComponents/GalleryPage";
 
 export const metadata = {
@@ -10,5 +11,6 @@ export const metadata = {
 };
 
 export default function GalleryRoute() {
-  return <GalleryPage />;
+  return <>
+  <GalleryPage /> <Blog/></>;
 }

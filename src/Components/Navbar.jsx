@@ -13,6 +13,7 @@ const navItems = [
   { href: "/memories", label: "Memories" },
   { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
+  { href: "/service", label: "Service" },
 ];
 
 export default function Navbar() {
