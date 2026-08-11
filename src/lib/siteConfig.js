@@ -48,15 +48,18 @@ export const siteConfig = Object.freeze({
   emailJs: {
     serviceId: readPublicEnv(
       process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-      "service_uo67e3c"
+      // "service_uo67e3c"
+      "service_00mk4a4"
     ),
     templateId: readPublicEnv(
       process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-      "template_0amw4bq"
+      // "template_0amw4bq"
+      "template_i33wnp9"
     ),
     publicKey: readPublicEnv(
       process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
-      "KOkedtviI3t_etN54"
+      // "KOkedtviI3t_etN54"
+      "6IK4CfabxnPl-hhP4"
     ),
   },
 });

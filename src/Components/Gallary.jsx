@@ -138,7 +138,7 @@ import image10 from "@/assets/images/gallery/10.jpg";
 import image11 from "@/assets/images/gallery/11.jpg";
 import image12 from "@/assets/images/gallery/12.jpg";
 import image13 from "@/assets/images/gallery/13.jpg";
-import image15 from "@/assets/images/gallery/15.jpg";
+import image45 from "@/assets/images/gallery/45.jpg";
 import Image from "next/image";
 
 export default function GalleryPage() {
@@ -146,7 +146,7 @@ export default function GalleryPage() {
 
   // Array of images
   const images = [
-    image1,
+    // image1,
     image2,
     image3,
     image4,
@@ -159,7 +159,7 @@ export default function GalleryPage() {
     image11,
     image12,
     image13,
-    image15,
+    image45,
   ];
 
   return (

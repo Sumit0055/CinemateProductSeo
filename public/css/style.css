@@ -9442,3 +9442,58 @@ ul li a:hover {
   object-fit: cover; /* image fullscreen cover */
   display: block;
 }
+
+
+
+
+
+/* -------------------- */
+.gallery-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.mySwiper2 {
+  width: 100%;
+  height: 65vh;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.mySwiper2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper {
+  margin-top: 15px;
+  height: 120px;
+}
+
+.mySwiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mySwiper img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+/* 📱 Mobile */
+@media (max-width: 768px) {
+  .mySwiper2 {
+    height: 40vh;
+  }
+  .mySwiper {
+    height: 80px;
+  }
+}
+
